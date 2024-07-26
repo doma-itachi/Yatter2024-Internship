@@ -1,5 +1,6 @@
 package com.dmm.bootcamp.yatter2024.domain.repository
 
+import android.net.Uri
 import com.dmm.bootcamp.yatter2024.domain.model.Account
 import com.dmm.bootcamp.yatter2024.domain.model.Me
 import com.dmm.bootcamp.yatter2024.domain.model.Password

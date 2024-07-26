@@ -13,7 +13,7 @@ import com.dmm.bootcamp.yatter2024.infra.domain.service.LoginServiceImpl
 import org.koin.dsl.module
 
 internal val domainImplModule = module {
-  single<AccountRepository> { AccountRepositoryImpl(get(), get()) }
+  single<AccountRepository> { AccountRepositoryImpl(get(), get(), get()) }
   single<StatusRepository> { StatusRepositoryImpl(get(), get()) }
 
   factory<GetMeService> { GetMeServiceImpl(get()) }

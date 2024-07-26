@@ -13,7 +13,7 @@ object AccountConverter {
   ): List<Account> = jsonList.map { convertToDomainModel(it) }
 
   fun convertToDomainModel(json: AccountJson): Account = AccountImpl(
-    id = AccountId(json.id),
+    id = AccountId(json.id?:""),
     username = Username(json.username),
     displayName = json.displayName,
     note = json.note,
